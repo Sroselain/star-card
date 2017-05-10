@@ -1,0 +1,54 @@
+.wrapper{
+    height:150px;
+    width:150px;
+    perspective: 600px;
+    margin-left:1000px;
+    perspective-origin: 200px 200px;
+    padding-top:45px;
+    text-align:center;
+}
+#cube{
+    height:60px;
+    width:60px;
+    position:relative;
+    transform-style:preserve-3d;
+    animation:myAnima 5s linear infinite;
+}
+.face{
+    height:60px;
+    width:60px;
+    position:absolute;
+    text-align:center;
+    display:block;
+}
+#top{
+    background:url("image/top.jpg");
+    transform:translateY(-60px) rotateX(90deg);
+    transform-origin:bottom;
+}
+#bottom{
+    background:url("image/bottom.jpg");
+    transform:translateY(60px) rotateX(270deg);
+    transform-origin:top;
+}
+#left{
+    background:url("image/left.jpg");
+    transform:translateX(-60px) rotateY(270deg);
+    transform-origin:right;
+}
+#right{
+    background:url("image/right.jpg");
+    transform:translateX(60px) rotateY(90deg);
+    transform-origin:left;
+}
+#front{
+    background:url("image/front.jpg");
+}
+#back{
+    background:url("image/back.jpg");
+    transform:translateZ(-60px) rotateY(180deg);
+}
+@keyframes myAnima{
+    50%{transform: rotateY(360deg);}
+    51%{transform:rotateX(360deg);}
+}
