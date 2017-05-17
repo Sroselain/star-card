@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    height:150px;
+    width:100%;
+    background-color:#DCDCDC;
+}
+header p{
+    font-size:35px;
+    width:600px;
+    height:150px;
+    margin:0 auto;
+    text-align:center;
+    line-height:150px;
+    float:left;
+}
+#content{
+    height:500px;
+    width:100%;
+    position: relative;
+}
+#sidebar{
+    height:500px;
+    width:20%;
+    background-color:lightblue;
+    position: absolute;
+}
+#sidebar ul{
+    padding-top:1px;
+}
+#sidebar li{
+    line-height: 50px;
+    font-size:30px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    border-top: 1px solid #000;
+}
+#sidebar li:nth-last-child(1){
+    border-bottom:1px solid #000;
+}
+#sidebar a{
+    text-decoration:none;
+    color:dimgray;
+}
+#sidebar a:hover{
+    font-size:31px;
+    color: #000;
+}
+#main{
+    background-color:lightpink;
+    height:500px;
+    width:80%;
+    position: relative;
+    left:20%;
+}
+.starCard{
+    width:284px;
+    height:404px;
+    position:relative;
+    margin:0 auto;
+    top:8%;
+    border:5px solid rgba(0,0,0,0.8);
+}
+img{
+    width:280px;
+    height:400px;
+    border: 2px solid white;
+    position:absolute;
+}
+.introFrameTop{
+    height:100px;
+    width:280px;
+    top:2px;
+    left:2px;
+    position: absolute;
+}
+#grade{
+    height:40px;
+    width:40px;
+    font-size:35px;
+    color:white;
+    position:absolute;
+    left:20px;
+    top:10px;
+}
+#value{
+    height:30px;
+    width:50px;
+    font-size:25px;
+    color:yellow;
+    position:absolute;
+    left:210px;
+    top:20px;
+    background-color:rgba(255,255,255,0.4);
+    border:2px solid rgba(0,0,0,0.5);
+    border-radius:5px;
+}
+.introFrameBottom{
+    height:150px;
+    width:280px;
+    bottom:2px;
+    left:2px;
+    position: absolute;
+    background: linear-gradient(to top,purple,transparent);
+    text-align:right;
+}
+.position{
+    position:absolute;
+    text-align:center;
+}
+#position1{
+    height:40px;
+    width:40px;
+    font-size:28px;
+    background-color: aliceblue;
+    border-radius:20px;
+    left:20px;
+    bottom:60px;
+    z-index:1;
+}
+#position2{
+    height:30px;
+    width:30px;
+    font-size:20px;
+    background-color: #DCDCDC;
+    border-radius:15px;
+    left:56px;
+    bottom:60px;
+}
+.intro{
+    height:16px;
+    width:150px;
+    position:absolute;
+    bottom:16px;
+    right:140px;
+    font-size:17px;
+    font-weight:bold;
+}
+.year{
+    height:16px;
+    width:130px;
+    position:absolute;
+    bottom:18px;
+    left:135px;
+    font-size:17px;
+    font-style: italic;
+}
+footer{
+    height:150px;
+    width:100%;
+    background-color:#696969;
+}
+
